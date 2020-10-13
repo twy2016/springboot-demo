@@ -1,17 +1,12 @@
 package com.twy.mybatisplusdemo.mapper;
 
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.twy.mybatisplusdemo.entity.Test;
 
-public interface TestMapper {
-    int deleteByPrimaryKey(Integer id);
+/**
+ * @author gongpeng
+ * @date 2020/10/13 21:17
+ */
+public interface TestMapper extends BaseMapper<Test> {
 
-    int insert(Test record);
-
-    int insertSelective(Test record);
-
-    Test selectByPrimaryKey(Integer id);
-
-    int updateByPrimaryKeySelective(Test record);
-
-    int updateByPrimaryKey(Test record);
 }

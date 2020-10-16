@@ -8,28 +8,23 @@
         <version>1.0.0-SNAPSHOT</version>
     </parent>
     <groupId>com.twy</groupId>
-    <artifactId>mybatisplusdemo</artifactId>
+    <artifactId>sessionshare01</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <name>mybatisplusdemo</name>
-    <description>mybatisplus整合使用</description>
+    <name>sessionshare01</name>
+    <description>Demo project for Spring Boot</description>
 
     <dependencies>
         <dependency>
-            <groupId>com.twy</groupId>
-            <artifactId>common</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
         <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
+            <groupId>org.springframework.session</groupId>
+            <artifactId>spring-session-data-redis</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>druid</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-pool2</artifactId>
         </dependency>
     </dependencies>
 

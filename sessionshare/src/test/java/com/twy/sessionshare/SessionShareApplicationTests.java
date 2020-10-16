@@ -1,10 +1,10 @@
-package com.twy.sessionshare02;
+package com.twy.sessionshare;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Sessionshare02ApplicationTests {
+class SessionShareApplicationTests {
 
     @Test
     void contextLoads() {

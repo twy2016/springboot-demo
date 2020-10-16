@@ -1,13 +1,13 @@
-package com.twy.sessionshare02;
+package com.twy.sessionshare;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Sessionshare02Application {
+public class SessionShareApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(Sessionshare02Application.class, args);
+        SpringApplication.run(SessionShareApplication.class, args);
     }
 
 }

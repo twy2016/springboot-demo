@@ -8,11 +8,10 @@
         <version>1.0.0-SNAPSHOT</version>
     </parent>
     <groupId>com.twy</groupId>
-    <artifactId>redisdemo</artifactId>
+    <artifactId>redislock</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <name>redisdemo</name>
-    <description>Demo project for Spring Boot</description>
-
+    <name>redislock</name>
+    <description>redis分布式锁实现demo</description>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>

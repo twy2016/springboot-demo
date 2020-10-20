@@ -1,10 +1,10 @@
-package com.twy.redisdemo;
+package com.twy.redislock;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class RedisdemoApplicationTests {
+class RedislockApplicationTests {
 
     @Test
     void contextLoads() {

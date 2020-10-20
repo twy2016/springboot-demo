@@ -35,7 +35,7 @@
         <module>mybatisplusdemo</module>
         <module>sessionshare</module>
         <module>test</module>
-        <module>redisdemo</module>
+        <module>redislock</module>
     </modules>
 
     <dependencies>

@@ -1,13 +1,13 @@
-package com.twy.redisdemo;
+package com.twy.redislock;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class RedisdemoApplication {
+public class RedislockApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(RedisdemoApplication.class, args);
+        SpringApplication.run(RedislockApplication.class, args);
     }
 
 }

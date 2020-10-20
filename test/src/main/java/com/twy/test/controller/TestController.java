@@ -1,4 +1,4 @@
-package com.twy.test;
+package com.twy.test.controller;
 
 import com.twy.test.util.ThreadLocalUtil;
 import org.springframework.web.bind.annotation.GetMapping;

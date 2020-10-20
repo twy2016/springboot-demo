@@ -8,9 +8,9 @@
         <version>1.0.0-SNAPSHOT</version>
     </parent>
     <groupId>com.twy</groupId>
-    <artifactId>sessionshare01</artifactId>
+    <artifactId>sessionshare</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <name>sessionshare01</name>
+    <name>sessionshare</name>
     <description>Demo project for Spring Boot</description>
 
     <dependencies>

@@ -8,10 +8,10 @@
         <version>1.0.0-SNAPSHOT</version>
     </parent>
     <groupId>com.twy</groupId>
-    <artifactId>test</artifactId>
+    <artifactId>redisdemo</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <name>test</name>
-    <description>测试代码模块</description>
+    <name>redisdemo</name>
+    <description>Demo project for Spring Boot</description>
 
     <dependencies>
         <dependency>

@@ -4,6 +4,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
+
 
 /**
  * @author gongpeng
@@ -12,15 +14,8 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class User implements Cloneable {
+public class Item implements Serializable {
     private String name;
     private String address;
-    private Subject subject;
 
-    @Override
-    public Object clone() throws CloneNotSupportedException {
-        User user = (User) super.clone();
-        user.subject = (Subject) subject.clone();
-        return user;
-    }
 }

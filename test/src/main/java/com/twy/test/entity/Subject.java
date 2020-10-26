@@ -4,23 +4,18 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-
 /**
  * @author gongpeng
- * @date 2020/10/25 15:48
+ * @date 2020/10/26 16:06
  */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class User implements Cloneable {
+public class Subject implements Cloneable{
     private String name;
-    private String address;
-    private Subject subject;
 
     @Override
     public Object clone() throws CloneNotSupportedException {
-        User user = (User) super.clone();
-        user.subject = (Subject) subject.clone();
-        return user;
+        return super.clone();
     }
 }

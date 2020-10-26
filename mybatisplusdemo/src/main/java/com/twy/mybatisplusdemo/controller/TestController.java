@@ -1,5 +1,7 @@
 package com.twy.mybatisplusdemo.controller;
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.twy.mybatisplusdemo.entity.Test;
 import com.twy.mybatisplusdemo.service.TestService;
 import lombok.AllArgsConstructor;
@@ -22,6 +24,11 @@ public class TestController {
     public List<Test> list() {
         List<Test> list = testService.list();
         return list;
+    }
+
+    @GetMapping("/page")
+    public Page<Test> list(Page page) {
+        return testService.page(page);
     }
 
     @PostMapping("/save")

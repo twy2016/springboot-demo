@@ -4,11 +4,8 @@ import cn.hutool.core.util.ObjectUtil;
 import com.twy.test.entity.Item;
 import com.twy.test.entity.Subject;
 import com.twy.test.entity.User;
-import org.apache.commons.collections4.CollectionUtils;
 
-import java.math.BigDecimal;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 /**

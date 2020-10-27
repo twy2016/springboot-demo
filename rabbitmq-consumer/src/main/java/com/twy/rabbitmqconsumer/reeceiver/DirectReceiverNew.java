@@ -14,10 +14,10 @@ import java.util.Map;
 @Component
 @RabbitListener(queues = "directQueue")
 @Slf4j
-public class DirectReceiver {
+public class DirectReceiverNew {
 
     @RabbitHandler
     public void process(Map message) {
-        log.info("第一个消费者收到消息：{}", message.toString());
+        log.info("第二个消费者收到消息：{}", message.toString());
     }
 }

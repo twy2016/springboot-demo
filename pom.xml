@@ -36,7 +36,8 @@
         <module>sessionshare</module>
         <module>test</module>
         <module>redislock</module>
-        <module>rabbitmqdemo</module>
+        <module>rabbitmq-provider</module>
+        <module>rabbitmq-consumer</module>
     </modules>
 
     <dependencies>

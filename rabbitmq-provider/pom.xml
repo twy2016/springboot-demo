@@ -11,7 +11,13 @@
     <artifactId>rabbitmqdemo</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <name>rabbitmqdemo</name>
-    <description>rabbitmq学习demo</description>
+    <description>rabbitmq生产者</description>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
+        </dependency>
+    </dependencies>
     <build>
         <plugins>
             <plugin>

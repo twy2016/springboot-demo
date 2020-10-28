@@ -9,3 +9,7 @@ spring:
     username: root
     password: root
     virtual-host: twy
+    # 手动确认消息
+    listener:
+      simple:
+        acknowledge-mode: manual

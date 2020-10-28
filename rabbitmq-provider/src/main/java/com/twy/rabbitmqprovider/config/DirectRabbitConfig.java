@@ -1,4 +1,4 @@
-package com.twy.rabbitmqdemo.config;
+package com.twy.rabbitmqprovider.config;
 
 
 import org.springframework.amqp.core.Binding;
@@ -45,6 +45,11 @@ public class DirectRabbitConfig {
     @Bean
     public Binding binding(){
         return BindingBuilder.bind(directQueue()).to(directExchange()).with("directRouting");
+    }
+
+    @Bean
+    DirectExchange lonelyDirectExchange() {
+        return new DirectExchange("lonelyDirectExchange");
     }
 
 }

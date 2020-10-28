@@ -8,9 +8,9 @@
         <version>1.0.0-SNAPSHOT</version>
     </parent>
     <groupId>com.twy</groupId>
-    <artifactId>rabbitmqdemo</artifactId>
+    <artifactId>rabbitmq-prodiver</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <name>rabbitmqdemo</name>
+    <name>rabbitmq-provider</name>
     <description>rabbitmq生产者</description>
     <dependencies>
         <dependency>

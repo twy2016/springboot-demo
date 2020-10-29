@@ -7,6 +7,7 @@ import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.twy.common.entity.BaseEntity;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 /**
@@ -15,6 +16,7 @@ import lombok.Data;
  */
 @Data
 @TableName("test")
+@AllArgsConstructor
 public class Test extends BaseEntity {
 
     @TableId(type = IdType.AUTO)

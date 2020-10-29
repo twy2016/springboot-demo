@@ -14,21 +14,16 @@ import javax.annotation.Resource;
  * @author gongpeng
  * @date 2020/10/13 21:12
  */
-@Service("testServiceImpl")
-public class TestServiceImpl extends ServiceImpl<TestMapper, Test> implements TestService {
+@Service("newTestServiceImpl")
+public class NewTestServiceImpl {
 
     @Resource
     private TestMapper testMapper;
-    @Resource(name = "newTestServiceImpl")
-    private NewTestServiceImpl testService;
 
-    @Transactional
-    @Override
-    public boolean test(Test test) {
+    @Transactional(propagation = Propagation.REQUIRES_NEW)
+    public boolean testSub() {
+        Test test = new Test(25, "测试", "地址");
         testMapper.save(test);
-        testService.testSub();
-        int i = 1/0;
         return true;
     }
-
 }

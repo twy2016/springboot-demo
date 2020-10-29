@@ -24,7 +24,7 @@
         <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
         <springboot.version>2.3.4.RELEASE</springboot.version>
         <mysql.version>8.0.18</mysql.version>
-        <druid.version>1.1.23</druid.version>
+        <druid.version>1.2.1</druid.version>
         <mybatisplus.version>3.4.0</mybatisplus.version>
         <commonspool.version>2.9.0</commonspool.version>
     </properties>
@@ -87,7 +87,7 @@
             </dependency>
             <dependency>
                 <groupId>com.alibaba</groupId>
-                <artifactId>druid</artifactId>
+                <artifactId>druid-spring-boot-starter</artifactId>
                 <version>${druid.version}</version>
             </dependency>
             <dependency>

@@ -8,4 +8,5 @@ import com.twy.mybatisplusdemo.entity.Test;
  * @date 2020-10-13 21:12
  */
 public interface TestService extends IService<Test> {
+    boolean test(Test test);
 }

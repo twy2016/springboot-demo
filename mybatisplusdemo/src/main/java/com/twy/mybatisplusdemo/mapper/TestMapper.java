@@ -9,4 +9,5 @@ import com.twy.mybatisplusdemo.entity.Test;
  */
 public interface TestMapper extends BaseMapper<Test> {
 
+    void save(Test test);
 }

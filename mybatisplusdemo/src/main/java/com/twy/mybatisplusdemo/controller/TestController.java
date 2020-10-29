@@ -41,4 +41,9 @@ public class TestController {
         return testService.removeById(id);
     }
 
+    @PostMapping("/test")
+    public boolean test(Test test) {
+        return testService.test(test);
+    }
+
 }

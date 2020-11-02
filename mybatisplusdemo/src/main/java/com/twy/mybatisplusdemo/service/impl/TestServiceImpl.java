@@ -31,4 +31,11 @@ public class TestServiceImpl extends ServiceImpl<TestMapper, Test> implements Te
         return true;
     }
 
+    public static void main(String[] args) {
+        Double a = 1.0d;
+        Double b = 20.2d;
+        Double c = 300.02d;
+        System.out.println(a+b+c);
+    }
+
 }

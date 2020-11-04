@@ -1,6 +1,5 @@
 package com.twy.rabbitmqconsumer.reeceiver;
 
-import com.rabbitmq.client.AMQP;
 import com.rabbitmq.client.Channel;
 import com.twy.rabbitmqprovider.entity.User;
 import lombok.extern.slf4j.Slf4j;

@@ -5,7 +5,6 @@ import com.twy.mybatisplusdemo.entity.Test;
 import com.twy.mybatisplusdemo.mapper.TestMapper;
 import com.twy.mybatisplusdemo.service.TestService;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;

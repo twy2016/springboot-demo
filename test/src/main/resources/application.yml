@@ -4,3 +4,27 @@ spring:
     port: 6379
     password: 123456
     database: 1
+  datasource:
+    #druid 数据源专有配置
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&usessl=false
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    #连接池配置
+    druid:
+      initialSize: 20
+      min-idle: 20
+      max-active: 100
+      max-wait: 3000
+      time-between-eviction-runs-millis: 600000
+      min-evictable-idle-time-millis: 300000
+      test-on-borrow: false
+      test-on-return: false
+      test-while-idle: true
+      validation-query: SELECT 1 FROM DUAL
+      remove-abandoned: true
+      remove-abandoned-timeout: 1800
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

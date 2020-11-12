@@ -1,14 +1,10 @@
 package com.twy.mybatisplusdemo.entity;
 
-import java.io.Serializable;
-import java.util.Date;
-
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.annotation.*;
 import com.twy.common.entity.BaseEntity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * @author gongpeng
@@ -17,6 +13,7 @@ import lombok.Data;
 @Data
 @TableName("test")
 @AllArgsConstructor
+@NoArgsConstructor
 public class Test extends BaseEntity {
 
     @TableId(type = IdType.AUTO)
@@ -26,4 +23,15 @@ public class Test extends BaseEntity {
 
     private String address;
 
+    @Version
+    private Integer version;
+
+    @TableLogic(delval = "-1")
+    private Integer delFlag;
+
+    public Test(Integer id, String name, String address) {
+        this.id = id;
+        this.name = name;
+        this.address = address;
+    }
 }

@@ -36,6 +36,18 @@ public class TestController {
         return testService.saveOrUpdate(test);
     }
 
+    /**
+     * 乐观锁更新
+     * 需要先查询再更新，否则不会生效
+     * @param id
+     * @return
+     */
+    @PostMapping("/update")
+    public boolean update(Integer id) {
+        Test test = testService.getById(id);
+        return testService.updateById(test);
+    }
+
     @DeleteMapping("/{id}")
     public boolean delete(@PathVariable Integer id) {
         return testService.removeById(id);

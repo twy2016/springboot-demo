@@ -39,6 +39,13 @@
         <module>rabbitmq-provider</module>
         <module>rabbitmq-consumer</module>
         <module>kafka</module>
+        <module>filter</module>
+        <module>flowable</module>
+        <module>jwt</module>
+        <module>listener</module>
+        <module>security</module>
+        <module>security</module>
+        <module>validation</module>
     </modules>
 
     <dependencies>

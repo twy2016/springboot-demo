@@ -1,5 +1,7 @@
 package com.twy.test;
 
+import com.twy.test.entity.TestEntity;
+
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -9,14 +11,14 @@ import java.util.stream.Collectors;
  * @author gongpeng
  * @date 2020/11/16 15:59
  */
-public class ListTest {
+public class ListTest2 {
 
     /**
      * 使用两个for循环实现List去重(有序)
      *
      * @param list
      */
-    public static List removeDuplicationBy2For(List<Integer> list) {
+    public static List removeDuplicationBy2For(List<TestEntity> list) {
         for (int i = 0; i < list.size(); i++) {
             for (int j = i + 1; j < list.size(); j++) {
                 if (list.get(i).equals(list.get(j))) {
@@ -32,8 +34,8 @@ public class ListTest {
      *
      * @param list
      */
-    public static List removeDuplicationByContains(List<Integer> list) {
-        List<Integer> newList = new ArrayList<>();
+    public static List removeDuplicationByContains(List<TestEntity> list) {
+        List<TestEntity> newList = new ArrayList<>();
         for (int i = 0; i < list.size(); i++) {
             boolean isContains = newList.contains(list.get(i));
             if (!isContains) {
@@ -50,7 +52,7 @@ public class ListTest {
      *
      * @param list
      */
-    public static List removeDuplicationByHashSet(List<Integer> list) {
+    public static List removeDuplicationByHashSet(List<TestEntity> list) {
         HashSet set = new HashSet(list);
         //把List集合所有元素清空
         list.clear();
@@ -64,7 +66,7 @@ public class ListTest {
      *
      * @param list
      */
-    public static List removeDuplicationByTreeSet(List<Integer> list) {
+    public static List removeDuplicationByTreeSet(List<TestEntity> list) {
         TreeSet set = new TreeSet(list);
         //把List集合所有元素清空
         list.clear();
@@ -78,25 +80,27 @@ public class ListTest {
      *
      * @param list
      */
-    public static List removeDuplicationByStream(List<Integer> list) {
+    public static List removeDuplicationByStream(List<TestEntity> list) {
         List newList = list.stream().distinct().collect(Collectors.toList());
         return newList;
     }
 
     public static void main(String args[]) {
-        List<Integer> list1 = new ArrayList<>();
-        List<Integer> list2 = new ArrayList<>();
-        List<Integer> list3 = new ArrayList<>();
-        List<Integer> list4 = new ArrayList<>();
-        List<Integer> list5 = new ArrayList<>();
+        List<TestEntity> list1 = new ArrayList<>();
+        List<TestEntity> list2 = new ArrayList<>();
+        List<TestEntity> list3 = new ArrayList<>();
+        List<TestEntity> list4 = new ArrayList<>();
+        List<TestEntity> list5 = new ArrayList<>();
         Random random = new Random();
         for (int i = 0; i < 100000; i++) {
             int value = random.nextInt(100000);
-            list1.add(value);
-            list2.add(value);
-            list3.add(value);
-            list4.add(value);
-            list5.add(value);
+            int index = random.nextInt(100);
+            TestEntity entity = new TestEntity(value, "测试" + index);
+            list1.add(entity);
+            list2.add(entity);
+            list3.add(entity);
+            list4.add(entity);
+            list5.add(entity);
         }
         long startTime;
         long endTime;

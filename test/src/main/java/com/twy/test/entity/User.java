@@ -17,6 +17,11 @@ public class User implements Cloneable {
     private String address;
     private Subject subject;
 
+    public User(String name, String address) {
+        this.name = name;
+        this.address = address;
+    }
+
     @Override
     public Object clone() throws CloneNotSupportedException {
         User user = (User) super.clone();

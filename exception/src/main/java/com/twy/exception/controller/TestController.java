@@ -1,6 +1,7 @@
 package com.twy.exception.controller;
 
 import com.twy.common.entity.R;
+import com.twy.exception.exception.MyException;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -24,5 +25,10 @@ public class TestController {
         String s = null;
         s.toString();
         return R.ok();
+    }
+
+    @GetMapping("/test3")
+    public R test3() throws MyException {
+        throw new MyException("测试异常");
     }
 }
